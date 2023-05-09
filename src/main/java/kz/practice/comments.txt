@@ -1,0 +1,11 @@
+first terminal shell:
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+
+second terminal shell:
+bin/kafka-server-start.sh config/server.properties
+
+
+
+reading events:
+bin/kafka-console-consumer.sh --topic testing --from-beginning --bootstrap-server localhost:9092
